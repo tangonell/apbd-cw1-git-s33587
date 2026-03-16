@@ -27,6 +27,13 @@ public class StatisticsHelper
 
     public static int CalculateMin(int[] values)
     {
-        return 0; // TODO
+        if (values.Length == 0) return 0;
+        var min = values[0];
+        for (var i = 1; i < values.Length; i++)
+        {
+            if (values[i] < min)
+                min = values[i];
+        }
+        return min;
     }
 }
