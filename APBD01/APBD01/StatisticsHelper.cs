@@ -9,8 +9,8 @@ public class StatisticsHelper
         {
             sum += value;
         }
-        var average = sum / values.Length;
-        return average;
+        var result = sum / values.Length;
+        return result;
     }
 
     public static int CalculateMax(int[] values)
